@@ -1,0 +1,217 @@
+﻿
+
+.Container
+{
+    margin: 1%;
+    padding: 10px;
+    background-color: #C0C0C0;
+    width: 98%;
+}
+
+.DivParts
+{
+    border: 1px solid #000000;
+    padding: 5px;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+}
+
+.DivMenuContainer
+{
+    margin: 0;
+    padding: 10px;
+}
+.DivMenuItemGroup
+{
+  float:left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.DivMenuItem
+{
+  float:left;
+  position: relative;
+  min-height: 1px;
+}
+.DivDatePickerandTitle
+{
+    margin: 0;
+    padding: 10px;
+    background-color: Green;
+    display:block;
+}
+
+.DivDateTitle
+{
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+    font-size: x-large;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    background-color: #666666;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.DivCalendar
+{
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.TableCalendarTable
+{
+    border-width: thin;
+    width: 100%;
+    border-style: solid;
+}
+
+.DivDatePicker
+{
+    border-style: solid;
+    float: left;
+    width: 25%;
+}
+
+
+/************ Markers ************/
+.DivLine
+{
+    border-style: solid;
+    border-width: thin;
+    background-color: #008000;
+    position: absolute;
+    display: table-row;
+    width: 100px;
+}
+
+.DivLine:hover
+{
+    background-color: #00FF00;
+}
+
+.DivLine.complete {
+    border-radius: 20px;
+}
+
+.DivLine.start
+{
+    border-radius: 20px 0 0 20px;
+}
+.DivLine.start:after
+{
+    content: "\e075";
+    font-family: "Glyphicons Halflings";
+    line-height: 1;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+
+.DivLine.end {
+    border-radius: 0 20px 20px 0;
+
+}
+.DivLine.end:before{
+  content:"\e071";
+  font-family:"Glyphicons Halflings";
+  line-height:1;
+  margin:10px;
+  display:inline-block;
+  position: absolute;
+    left: 0px;
+}
+
+.DivLine.middle {
+    width: 100%;
+}
+.DivLine.middle:after
+{
+    content: "\e075";
+    font-family: "Glyphicons Halflings";
+    line-height: 1;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+.DivLine.middle:before{
+  content:"\e071";
+  font-family:"Glyphicons Halflings";
+  line-height:1;
+  margin:10px;
+  display:inline-block;
+  position: absolute;
+    left: 0px;
+}
+
+
+.DivLine-label
+{
+    position: absolute;
+    top:7px;
+    color: #fff;
+    display: inline-table;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/*--------------- Markers ------------------*/
+
+/****************RightPanel******************/
+.Paragraf
+{
+    font-size: small;
+    font-family: Arial;
+    text-align: left;
+    text-indent: 5px;
+    white-space: normal;
+}
+
+
+
+/*-------------RightPanel-------------------*/
+
+
+
+i:hover
+{
+    cursor: pointer;
+}
+
+.popover-medium {
+    max-width: 75%;
+    min-width: 200px;
+}
+
+.modalExtWide {
+    max-width: 100%;
+    min-width: 800px;
+}
+
+.modalExtWideEdit {
+    max-width: 100%;
+    min-width: 80%;
+}
+.modal {
+    overflow: auto !important;
+}
+.Calendartd
+{
+    white-space: nowrap;
+}

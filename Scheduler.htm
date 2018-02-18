@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Library Styles -->
+    <link href="Lib/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Lib/Boostrap-dropdown/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="Lib/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="Lib/Bootstrap-checkbox/bootstrap-toggle.min.css" rel="stylesheet" type="text/css" />
+    <link href="Lib/Bootstrap-Modal/Modal.css" rel="stylesheet" type="text/css" />
+
+    <!-- Library Codes -->
+    <script type="text/javascript" src="Lib/Jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Lib/Jquery/jquery-collision.min.js"></script>
+
+    <script type="text/javascript" src="Lib/Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Lib/Moments/moment.min.js"></script>
+    <script type="text/javascript" src="Lib/Moments/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="Lib/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="Lib/Boostrap-dropdown/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="Lib/Bootstrap-checkbox/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript" src="Lib/Bootstrap-Bootbox/bootbox.min.js"></script>
+    <!-- My Files -->
+    <link href="MyDist/css/MySchedule.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="MyDist/js/MyScheduleDBProcedures.js"></script>
+    <script type="text/javascript" src="MyDist/js/MySchedule.js"></script>
+    <script type="text/javascript" src="MyDist/js/locales/MySchedule-locale-tr.js"></script>
+    <script type="text/javascript" src="MyDist/js/locales/MySchedule-locale-en.js"></script>
+</head>
+<body>
+    <div class="Container" id="MySchedule"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#MySchedule").MySchedule({
+                //Databasename must be SET in MyScheduleDBProcedures.js otherwise doesn't work properly
+                locale: 'tr',
+                defaultDisplay: 'years', //Can be (days,weeks,months,years)
+                defaultCalType: 'person', //Can be (person,task)
+                defaultDate: '',
+                FirstColumnWidth: 100,
+                WeekendColor : true,
+                NowColor : true,
+                SelectedColor: true,
+                SpecialDayColor: true,
+                ShowGroups: true,
+                showInfoBox: true //On mouse over the info box will be appear. Also when u click the info and the edit box will be shown.
+            });
+
+        });
+        
+    </script>
+
+</body>
+</html>
